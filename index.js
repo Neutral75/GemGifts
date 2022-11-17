@@ -1,12 +1,8 @@
-const initializeApp = require('firebase/app');
-const getAnalytics = require('firebase/analytics');
+const  { initializeApp } = require('@firebase/app');
 const express = require('express');
 const path = require('path');
 
 const app = express();
-
-const firebaseapp = initializeApp(firebaseConfig);
-const analytics = getAnalytics(firebaseapp);
 
 const firebaseConfig = {
   apiKey: "AIzaSyCzDj2viWa6xGTS5jFujq9yk28vn1BlO1E",
@@ -17,6 +13,8 @@ const firebaseConfig = {
   appId: "1:589017717040:web:583d99376a62b6567f50f5",
   measurementId: "G-FWQEKG7ZLC"
 };
+
+const firebaseapp = initializeApp(firebaseConfig);
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, './Website')));
