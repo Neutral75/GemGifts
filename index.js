@@ -31,3 +31,7 @@ app.get('/', async (request, response) => {
 app.get('/home', async (request, response) => {
     return response.render('home');
 });
+
+app.listen(process.env.PORT || 3000, () => {
+  console.log('Beep!');
+});
