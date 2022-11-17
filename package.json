@@ -1,0 +1,25 @@
+{
+  "name": "gemgifts",
+  "version": "1.0.0",
+  "description": "Complete easy tasks by downloading apps and concluding surveys and redeeming awesome in-game currencies, gift cards, and much more!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neutral75/GemGifts.git"
+  },
+  "author": "neutral750@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neutral75/GemGifts/issues"
+  },
+  "homepage": "https://github.com/Neutral75/GemGifts#readme",
+  "dependencies": {
+    "@firebase/analytics": "^0.8.4",
+    "@firebase/app": "^0.8.4",
+    "express": "^4.18.2",
+    "path": "^0.12.7"
+  }
+}
