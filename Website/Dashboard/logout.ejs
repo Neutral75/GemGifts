@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GemGifts | Profile</title>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>GemGifts | Logout</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Lexend:100,300,400,500,600,700,800&amp;display=swap');
@@ -33,10 +33,15 @@
 </style>
 
 <body>
-    <p id="info"></p>
+    <p>
+        <a href="home">Click here to be redirected to the home page.</a>
+    </p>
     <script>
-        const username = localStorage.getItem('username');
-        document.getElementById('info').innerHTML = `Hello, ${username}`;
+        window.onload = () => {
+            localStorage.clear();
+
+            return window.location.href = `http://localhost:3000/home`;
+        };
     </script>
 </body>
 

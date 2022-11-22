@@ -26,7 +26,11 @@ app.get('/home', async (request, response) => {
 });
 
 app.get('/login', async (request, response) => {
-    response.redirect('https://discord.com/api/oauth2/authorize?client_id=1043619590216884315&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth&response_type=token&scope=identify%20email')
+    response.redirect('https://discord.com/api/oauth2/authorize?client_id=1043619590216884315&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth&response_type=token&scope=identify%20email');
+});
+
+app.get('/logout', async (request, response) => {
+    response.render('dashboard/logout')
 });
 
 app.get('/auth', async (request, response) => {
